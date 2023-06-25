@@ -1,3 +1,5 @@
+#Requires -Version 5 -RunAsAdministrator
+
 Stop-Process -Force -Name "msedge"
 
 # The optimistic approach laid out by Microsoft. Doesn't always work.
