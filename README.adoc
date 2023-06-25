@@ -1,13 +1,11 @@
-Removes Microsoft Edge and prevents it from coming back after Windows Updates. You can run `Nuke_Microsoft_Edge.ps1` on its own with no issues, but it's intended for https://github.com/felikcat/W11Boost[W11Boost].
-
-.Disabled:
-. Update services.
+TIP: This is intended for https://github.com/felikcat/W11Boost[W11Boost], however you can run `Nuke_Microsoft_Edge.ps1` on its own.
 
 .Removed:
-. Shortcuts in various locations pointing to MSEdge.
-. All MSEdge's prefetch data.
+. MSEdge update services.
 . MSEdge and its devtools.
 . The compatibility assistant profile for MSEdge.
+. Shortcuts in various locations pointing to MSEdge.
+. All MSEdge's prefetch data.
 
 .What is avoided:
 . Removal of the following in `C:\Windows\System32`: `MicrosoftEdgeBCHost`, `MicrosoftEdgeCP`, `MicrosoftEdgeDevTools`, `MicrosoftEdgeSH`.
