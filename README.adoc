@@ -1,14 +1,26 @@
-TIP: This is intended for https://github.com/felikcat/W11Boost[W11Boost], however you can run `Nuke_Microsoft_Edge.ps1` on its own.
+TIP: This is intended for https://github.com/felikcat/W11Boost[W11Boost], but fully works on its own.
+
+.Instructions
+- Download https://github.com/felikcat/nuke-microsoft-edge/archive/refs/heads/master.zip[Nuke Microsoft Edge].
+- Run `Launcher.bat`.
+- Reboot after its complete and enjoy.
+
+.Disabled:
+. MSEdge update services: `edgeupdate`, `edgeupdatem`, `MicrosoftEdgeElevationService`.
 
 .Removed:
-. MSEdge update services.
+. All file associations for MSEdge, making MSEdge no longer the default browser for anything.
 . MSEdge and its devtools.
 . The compatibility assistant profile for MSEdge.
 . Shortcuts in various locations pointing to MSEdge.
 . All MSEdge's prefetch data.
 
 .What is avoided:
+. Removal of MSEdge update services.
+
 . Removal of the following in `C:\Windows\System32`: `MicrosoftEdgeBCHost`, `MicrosoftEdgeCP`, `MicrosoftEdgeDevTools`, `MicrosoftEdgeSH`.
 - Why: My assumption that removing these wouldn't help prevent MSEdge from coming back.
-. Removal of `EdgeCore`, `EdgeUpdate`, `EdgeWebView`.
-- Why: Avoids breaking apps or programs.
+
+. Removal of the `EdgeCore`, `EdgeUpdate`, `EdgeWebView` apps.
+. Removal of Edge's firewall rules.
+- Why: Avoids breaking apps or programs reliant on EdgeWebView.
